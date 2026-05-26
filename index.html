@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="fr">
+
+<head lang="fr">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/colors.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="images/aggloLisieuxLogo.png" type="image/x-icon">
+  <title>PLD Communauté de communes Lisieux</title>
+</head>
+
+<body class="d-flex flex-column min-vh-100" data-author="CONSTANTIN Thomas">
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary px-3">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img src="images/aggloLisieuxLogo.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+        SAE - Transition Écologique
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Accueil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pages/infrastructure.html">Infrastructure</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pages/foire_aux_questions.html">Foire aux Questions</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pages/PLD_Crise_eco.html">PLD</a>
+          </li>
+          <!-- Liens visibles uniquement selon le rôle (adm = administré, com = commune, agg = agglomération) -->
+          <li class="nav-item" id="nav-adm" style="display: none;">
+            <a class="nav-link" href="pages/questionnaireadministre.html">Questionnaire Administrés</a>
+          </li>
+          <li class="nav-item" id="nav-com" style="display: none;">
+            <a class="nav-link" href="pages/questionnairecommune.html">Questionnaire Communes</a>
+          </li>
+          <li class="nav-item" id="nav-agg" style="display: none;">
+            <a class="nav-link" href="pages/resultat_questionnaire.html">Résultats</a>
+          </li>
+        </ul>
+        <a href="pages/connexion.html" class="btn btn-success ms-2">Se connecter</a>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- Accueil message -->
+  <header class="text-center py-4 mb-4">
+    <div class="container">
+      <h1 class="fw-bold display-4">Transition Écologique</h1>
+      <p class="lead">Explorez les enjeux et solutions de la transition écologique dans la Communauté de communes de
+        Lisieux</p>
+      <br>
+      <p class="welcome-small">Bienvenue sur le site de la Communauté de communes</p>
+      <br>
+      <div class="row align-items-start mt-4">
+        <!-- Colonne gauche : carrousel -->
+        <div class="col-lg-5 col-md-6 mb-4">
+          <div id="carousel1" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carousel1" data-bs-slide-to="0" class="active" aria-current="true"
+                aria-label="Diapositive 1"></button>
+              <button type="button" data-bs-target="#carousel1" data-bs-slide-to="1"
+                aria-label="Diapositive 2"></button>
+              <button type="button" data-bs-target="#carousel1" data-bs-slide-to="2"
+                aria-label="Diapositive 3"></button>
+            </div>
+
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <img src="images/lisieux1.jpg" class="d-block w-100" alt="Mairie de Lisieux - vue 1">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>AstroBus</h5>
+                  <p>Le réseau de transports publics.</p>
+                </div>
+              </div>
+
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="images/lisieux2.jpg" class="d-block w-100" alt="Mairie de Lisieux - vue 2">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Mairie de Lisieux</h5>
+                  <p>Aperçu de la mairie.</p>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <img src="images/lisieux3.jpg" class="d-block w-100" alt="Mairie de Lisieux - vue 3">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Carte de la communauté de communes</h5>
+                  <p></p>
+                </div>
+              </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel1" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Précédent</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel1" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Suivant</span>
+            </button>
+          </div>
+        </div>
+        <!-- Colonne droite : texte et bouton -->
+        <div class="col-lg-7 col-md-6">
+          <div class="right-card">
+            <h3 class="mb-3">Présentation de l'objectif du site</h3>
+            <p class="mb-3">
+              Bienvenue sur le site dédié à la transition écologique de la Communauté de Communes de Lisieux.
+              Ce site a été créé pour accompagner les différents acteurs - administrés, communes et entreprises
+              -
+              à communiquer pour améliorer la compréhension et la mise en œuvre de la transition écologique.
+            </p>
+            <p class="mb-4">
+              Face aux enjeux climatiques actuels, qui menacent notre planète , la transition écologique n'est plus une option mais une nécessité.
+              Notre objectif est de recueillir vos besoins et vos attentes, notamment en matière de mobilité durable,
+              afin d'adapter nos infrastructures et services de transports en commun à vos usages réels.
+              Ensemble, construisons un territoire plus respectueux de l'environnement et plus adapté aux besoins de
+              chacun.
+            </p>
+
+            <p class="mb-3 text-center font-weight-bold">
+              Participez à notre étude et contribuez à façonner l'avenir de notre territoire
+            </p>
+            <div class="text-center">
+              <a href="pages/recensement.html" class="btn btn-success small-cta">Se recenser en tant qu'administré</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <section class="container my-5">
+  <h2 class="text-center mb-4">Objectif du site</h2>
+  <p class="text-center">
+    La Communauté de communes réunit plusieurs communes voisines qui ont choisi de collaborer afin de gérer collectivement des compétences essentielles pour le territoire. Cette organisation permet de mutualiser les moyens humains, techniques et financiers pour assurer un développement équilibré entre les différentes communes. Elle intervient notamment dans l’aménagement du territoire, la planification urbaine, la gestion des zones d’activités, la collecte et le traitement des déchets, l’assainissement ou encore la préservation de l’environnement. En agissant à une échelle plus large que celle d’une seule commune, la Communauté de communes peut porter des projets cohérents, durables et adaptés aux besoins réels du territoire.
+  </p>
+  <p class="text-center">
+    Au-delà de la gestion quotidienne, la Communauté de communes joue également un rôle stratégique. Elle élabore des orientations de long terme pour le développement local : amélioration des infrastructures, création de services accessibles à tous, soutien à l’activité économique, et adaptation aux enjeux écologiques actuels. Cette approche partagée permet de garantir un cadre de vie homogène et de réduire les inégalités entre les communes, qu’elles soient petites ou plus peuplées. Le travail mené vise à construire un territoire attractif, pratique à vivre et résilient face aux défis économiques, sociaux et environnementaux.
+  </p>
+  <p class="text-center">
+    Ce site a pour objectif de présenter les différents volets de l'étude que nous réalisons : analyse des besoins en mobilité, recensement des infrastructures vertes, observation du cadre de vie, et compréhension des attentes des habitants. Ces informations permettront d’alimenter un projet de territoire commun, basé sur des données concrètes et des retours d’usage. L’objectif est d’offrir à chaque habitant une vision claire du fonctionnement de la Communauté de communes, mais aussi de l’impliquer dans les démarches de transition, d’aménagement et d’amélioration du quotidien. Ensemble, nous contribuons à façonner un territoire cohérent, durable et tourné vers l’avenir.
+  </p>
+</section>
+
+
+  <!-- Contenu principal -->
+  <main class="flex-grow-1">
+    <section id="pages" class="container mb-5">
+      <h2 class="text-center mb-4">Les différentes ressources du site</h2>
+      <hr>
+
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card h-100 shadow-sm border-success border-2">
+            <div class="card-body text-center">
+              <h5 class="card-title">Comprendre la crise Écologique</h5>
+              <p class="card-text">Consultez le plan de développement local face aux enjeux économiques et
+                environnementaux de la communauté de communes.</p>
+              <a href="pages/PLD_Crise_eco.html" class="btn btn-outline-dark">Accéder</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card h-100 shadow-sm border-success border-2">
+            <div class="card-body text-center">
+              <h5 class="card-title">Présentation de l'étude que nous menons</h5>
+              <p class="card-text">Participez à notre étude sur les besoins en mobilité et aidez-nous à améliorer vos
+                transports en commun</p>
+              <a href="pages/pld.html" class="btn btn-outline-dark">Accéder</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card h-100 shadow-sm border-success border-2">
+            <div class="card-body text-center">
+              <h5 class="card-title">Infrastructures vertes</h5>
+              <p class="card-text">Découvrez les aménagements écologiques et espaces verts qui transforment notre
+                commune.</p>
+              <a href="pages/infrastructure.html" class="btn btn-outline-dark">Accéder</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card h-100 shadow-sm border-success border-2">
+            <div class="card-body text-center">
+              <h5 class="card-title">Mentions légales</h5>
+              <p class="card-text">Retrouvez toutes les informations légales concernant ce site et la protection de vos
+                données.</p>
+              <a href="pages/mentionLegales.html" class="btn btn-outline-dark">Accéder</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="py-3 mt-auto border-top">
+    <div class="container d-flex flex-wrap justify-content-between align-items-center position-relative">
+      <p class="mb-0 text-muted">© 2025 SAE Project</p>
+      <p class="position-absolute start-50 translate-middle-x text-center mb-0" id="page-author">CONSTANTIN Thomas</p>
+      <p class="mb-0" id="dateheure"></p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

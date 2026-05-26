@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="fr">
+
+<head lang="fr">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../css/colors.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="shortcut icon" href="../images/aggloLisieuxLogo.png" type="image/x-icon">
+  <title>PLD Communauté de communes Lisieux</title>
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary px-3">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../index.html">
+        <img src="../images/aggloLisieuxLogo.png" alt="Logo" width="30" height="30"
+          class="d-inline-block align-text-top">
+        SAE - Transition Écologique
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../index.html">Accueil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="infrastructure.html">Infrastructure</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="foire_aux_questions.html">Foire aux Questions</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="PLD_Crise_eco.html">PLD</a>
+          </li>
+          <!-- Liens visibles uniquement selon le rôle (adm = administré, com = commune, agg = agglomération) -->
+          <li class="nav-item" id="nav-adm" style="display: none;">
+            <a class="nav-link" href="questionnaireadministre.html">Questionnaire Administrés</a>
+          </li>
+          <li class="nav-item" id="nav-com" style="display: none;">
+            <a class="nav-link" href="questionnairecommune.html">Questionnaire Communes</a>
+          </li>
+          <li class="nav-item" id="nav-agg" style="display: none;">
+            <a class="nav-link" href="resultat_questionnaire.html">Résultats</a>
+          </li>
+        </ul>
+        <a href="connexion.html" class="btn btn-success ms-2">Se connecter</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero section ça s'appelle -->
+  <header class="bg-success text-white text-center py-5 mb-4">
+    <div class="container">
+      <h1 class="fw-light">Horaires des infrastructures :</h1>
+      <p class="lead">Voici les horaires des infrastructures et des lignes de transports sur notre communauté de
+        communes :</p>
+    </div>
+  </header>
+
+  <!-- Section Horaires - Communauté de Communes Lisieux -->
+  <section class="container mb-5">
+    <h2 class="mb-4 text-center">Horaires des lignes de transports</h2>
+
+    <div class="table-responsive">
+      <table class="table table-striped table-hover align-middle">
+        <thead class="table-success">
+          <tr>
+            <th scope="col">Ligne</th>
+            <th scope="col">Trajet</th>
+            <th scope="col">Départ</th>
+            <th scope="col">Arrivée</th>
+            <th scope="col">Fréquence</th>
+          </tr>
+        </thead>
+        <tbody>
+
+          <tr>
+            <td><span class="badge bg-success">101</span></td>
+            <td>Lisieux → Ouilly-le-Vicomte</td>
+            <td>07:15 • 08:30 • 12:00 • 17:20</td>
+            <td>07:25 • 08:45 • 12:15 • 17:35</td>
+            <td>Toutes les 1h30</td>
+          </tr>
+
+          <tr>
+            <td><span class="badge bg-primary">203</span></td>
+            <td>Lisieux → Saint-Désir → Rocques</td>
+            <td>06:50 • 09:00 • 13:45 • 18:10</td>
+            <td>07:05 • 09:20 • 14:05 • 18:30</td>
+            <td>4 trajets / jour</td>
+          </tr>
+
+          <tr>
+            <td><span class="badge bg-warning text-dark">310</span></td>
+            <td>Lisieux Gare → Hermival-les-Vaux</td>
+            <td>07:05 • 08:05 • 12:50 • 16:10 • 18:00</td>
+            <td>07:20 • 08:20 • 13:05 • 16:25 • 18:15</td>
+            <td>Toutes les 2h</td>
+          </tr>
+
+          <tr>
+            <td><span class="badge bg-danger">412</span></td>
+            <td>Lisieux → Glos → Marolles</td>
+            <td>06:40 • 08:10 • 11:30 • 15:45 • 19:00</td>
+            <td>07:00 • 08:30 • 11:50 • 16:05 • 19:20</td>
+            <td>5 trajets / jour</td>
+          </tr>
+
+          <tr>
+            <td><span class="badge bg-secondary">509</span></td>
+            <td>Lisieux → Saint-Germain-de-Livet</td>
+            <td>07:20 • 09:50 • 13:10 • 17:40</td>
+            <td>07:35 • 10:05 • 13:25 • 17:55</td>
+            <td>Toutes les 3h</td>
+          </tr>
+
+          <tr>
+            <td><span class="badge bg-info text-dark">601</span></td>
+            <td>Lisieux → La Vespière → Mézidon</td>
+            <td>06:30 • 08:30 • 11:00 • 14:30 • 17:00</td>
+            <td>06:50 • 08:50 • 11:20 • 14:50 • 17:20</td>
+            <td>Toutes les 2h</td>
+          </tr>
+
+          <tr>
+            <td><span class="badge bg-success">702</span></td>
+            <td>Lisieux → Livarot → Préaux</td>
+            <td>07:00 • 09:15 • 12:45 • 16:00 • 18:30</td>
+            <td>07:20 • 09:35 • 13:05 • 16:20 • 18:50</td>
+            <td>5 trajets / jour</td>
+          </tr>
+
+          <tr>
+            <td><span class="badge bg-primary">815</span></td>
+            <td>Lisieux → Saint-Pierre-sur-Dives → Aubigny</td>
+            <td>06:45 • 08:30 • 11:15 • 14:50 • 18:10</td>
+            <td>07:05 • 08:50 • 11:35 • 15:10 • 18:30</td>
+            <td>5 trajets / jour</td>
+          </tr>
+
+          <tr>
+            <td><span class="badge bg-warning text-dark">923</span></td>
+            <td>Lisieux → Le Mesnil-Mauger → Orbec</td>
+            <td>06:50 • 09:00 • 12:10 • 15:20 • 18:30</td>
+            <td>07:10 • 09:20 • 12:30 • 15:40 • 18:50</td>
+            <td>Toutes les 2h30</td>
+          </tr>
+
+          <tr>
+            <td><span class="badge bg-danger">1010</span></td>
+            <td>Lisieux → Saint-Julien-le-Faucon → Grandchamp</td>
+            <td>07:10 • 09:40 • 13:00 • 16:30</td>
+            <td>07:30 • 10:00 • 13:20 • 16:50</td>
+            <td>Toutes les 3h</td>
+          </tr>
+
+          <tr>
+            <td><span class="badge bg-secondary">1115</span></td>
+            <td>Lisieux → Glos-la-Ferrière → Cambremer</td>
+            <td>06:55 • 09:05 • 12:15 • 15:25 • 18:35</td>
+            <td>07:15 • 09:25 • 12:35 • 15:45 • 18:55</td>
+            <td>5 trajets / jour</td>
+          </tr>
+
+          <tr>
+            <td><span class="badge bg-info text-dark">1222</span></td>
+            <td>Lisieux → Saint-Martin-de-la-Lieue → La Folletière</td>
+            <td>07:05 • 08:55 • 12:30 • 16:10</td>
+            <td>07:25 • 09:15 • 12:50 • 16:30</td>
+            <td>Toutes les 2h30</td>
+          </tr>
+
+          <tr>
+            <td><span class="badge bg-success">1330</span></td>
+            <td>Lisieux → Beuvillers → Saint-Julien-le-Faucon</td>
+            <td>06:40 • 08:20 • 11:00 • 14:40 • 17:50</td>
+            <td>07:00 • 08:40 • 11:20 • 15:00 • 18:10</td>
+            <td>5 trajets / jour</td>
+          </tr>
+
+          <tr>
+            <td><span class="badge bg-primary">1444</span></td>
+            <td>Lisieux → Saint-Désir → Glos</td>
+            <td>07:20 • 09:00 • 12:40 • 16:20</td>
+            <td>07:40 • 09:20 • 13:00 • 16:40</td>
+            <td>Toutes les 2h30</td>
+          </tr>
+
+          <tr>
+            <td><span class="badge bg-warning text-dark">1555</span></td>
+            <td>Lisieux → Marolles → Mézidon</td>
+            <td>06:50 • 09:10 • 12:30 • 15:50 • 18:10</td>
+            <td>07:10 • 09:30 • 12:50 • 16:10 • 18:30</td>
+            <td>5 trajets / jour</td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+    <div class="alert alert-info text-center w-50 mx-auto" role="alert">
+      Les horaires sont purement fictifs et ont été inventés à l'aide d'une IA pour ne pas perdre de temps !
+    </div>
+  </section>
+
+
+
+  <footer class="py-3 mt-auto border-top">
+    <div class="container d-flex flex-wrap justify-content-between align-items-center position-relative">
+      <p class="mb-0 text-muted">© 2025 SAE Project</p>
+      <p class="position-absolute start-50 translate-middle-x text-center mb-0" id="page-author">BROUILLARD Léopold</p>
+      <p class="mb-0" id="dateheure"></p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+  <script src="../js/script.js"></script>
+  <!-- VIA CDN comme demandé par Mr ANNE  -->
+</body>
+
+</html>

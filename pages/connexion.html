@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head lang="fr">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../css/colors.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="shortcut icon" href="../images/aggloLisieuxLogo.png" type="image/x-icon">
+  <title>PLD Communauté de communes Lisieux</title>
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+<!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary px-3">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html">
+          <img src="../images/aggloLisieuxLogo.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+          SAE - Transition Écologique
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../index.html">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="infrastructure.html">Infrastructure</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="foire_aux_questions.html">Foire aux Questions</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="PLD_Crise_eco.html">PLD</a>
+            </li>
+          </ul>
+          <a href="connexion.html" class="btn btn-success ms-2">Se connecter</a>
+        </div>
+      </div>
+    </nav>
+
+  <!-- Hero section ça s'appelle -->
+    <header class="bg-success text-white text-center py-5 mb-4">
+      <div class="container">
+        <h1 class="fw-light">Connection</h1>
+        <p class="lead">Veuillez vous connecter, si vous êtes admistré et un autre rôle alors cocher la case vous permets d'accéder à votre autre rôle</p>
+      </div>
+    </header>
+
+  <section id="conn" class="d-flex justify-content-center m-3">
+    <div class="m-2 p-4 rounded bg-secondary-subtle">
+    <h2>Se connecter</h2>
+    <form id="connexion">
+      <!--Attention le module de connecxion ici n'est pas complet comme il ne gere pas le homonymes et est géré en js-->
+      <div class="form-group">
+        <label for="Id">Identifiant : </label>
+        <input type="text" class="form-control" name="Id" placeholder="Identifiant" id="Id">
+      </div>
+      <div class="form-group">
+        <label for="mdp">Mot de passe : </label>
+        <input type="password" class="form-control" name="mdp" placeholder="Mot de passe" id="mdp">
+      </div>
+      <div class="form-check m-2">
+        <label for="connection_role" class="form-check-label">Se connecter avec son rôle administratif </label>
+        <input type="checkbox" class="form-check-input" name="connection_role" id="connection_role">
+      </div>
+      <button type="button" class="btn btn-success m-2" onclick="valider()">Valider</button>
+    </form>
+    </div>
+  </section>
+  <!-- FOOTER -->
+  <footer class="--color-lime-300 py-3 mt-auto border-top">
+    <div class="container d-flex flex-wrap justify-content-between align-items-center position-relative">
+      <p class="mb-0 text-muted">© 2025 SAE Project</p>
+      <p class="position-absolute start-50 translate-middle-x text-center mb-0">COSSE Damien</p>
+      <p class="start-50 translate-right-x text-center mb-0" id="dateheure"></p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+  <script src="../js/script.js"></script>
+  </body>
+
+
+</html>
