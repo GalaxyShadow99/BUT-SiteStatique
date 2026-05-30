@@ -9,15 +9,15 @@ L'objectif principal est de concevoir un site web statique pour accompagner les 
 
 Voici quelques captures d'écran du projet pour montrer l'interface et les principales pages :
 
-![Page d'accueil](ReadmeImages\Readme1.png)
+![Page d'accueil](ReadmeImages/Readme1.png)
 
-![Comprendre la Transition Écologique](ReadmeImages\Readme2.png)
+![Comprendre la Transition Écologique](ReadmeImages/Readme2.png)
 
-![Horaires des infrastructures](ReadmeImages\Readme3.png)
+![Horaires des infrastructures](ReadmeImages/Readme3.png)
 
-![Formulaire de connexion](ReadmeImages\Readme4.png)
+![Formulaire de connexion](ReadmeImages/Readme4.png)
 
-![Formulaire de connexion](ReadmeImages\Readme5.png)
+![Formulaire de connexion](ReadmeImages/Readme5.png)
 
 ---
 
@@ -78,4 +78,3 @@ Ce site a été réalisé en collaboration par :
 - *DUMENIL Gaëlig*
 - *BROUILLARD Léopold*
 - *CONSTANTIN Thomas*
-
