@@ -4,6 +4,21 @@ Ce projet a été réalisé dans le cadre d’une **SAE (Situation d'Apprentissa
 
 L'objectif principal est de concevoir un site web statique pour accompagner les différents acteurs de la **Communauté de Communes de Lisieux Normandie** (administrés, communes et agglomération) dans la compréhension, la mise en œuvre et le recensement des besoins liés à la transition écologique, avec un focus particulier sur la mobilité durable.
 
+--- 
+## Captures d'écran
+
+Voici quelques captures d'écran du projet pour montrer l'interface et les principales pages :
+
+![Page d'accueil](ReadmeImages\Readme1.png)
+
+![Comprendre la Transition Écologique](ReadmeImages\Readme2.png)
+
+![Horaires des infrastructures](ReadmeImages\Readme3.png)
+
+![Formulaire de connexion](ReadmeImages\Readme4.png)
+
+![Formulaire de connexion](ReadmeImages\Readme5.png)
+
 ---
 
 ## Objectifs du Projet
@@ -58,9 +73,9 @@ En l'absence de base de données, le site intègre un **module de connexion comp
 ## Équipe 
 
 Ce site a été réalisé en collaboration par :
-- **COSSÉ Damien**
-- **ANGER--RENAULT Victor**
-- **DUMENIL Gaëlig**
-- **BROUILLARD Léopold**
-- **CONSTANTIN Thomas**
+- *COSSÉ Damien*
+- *ANGER--RENAULT Victor*
+- *DUMENIL Gaëlig*
+- *BROUILLARD Léopold*
+- *CONSTANTIN Thomas*
 
